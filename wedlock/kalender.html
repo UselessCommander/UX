@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="En kort beskrivelse af hjemmesiden.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="path_til_icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="app.js" defer></script>
+    <title>Din Hjemmesides Titel</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="forside.html"><h1>WEDLOCK</h1></a>
+            <!-- Burger-ikon til mobilnavigation -->
+            <div class="burger"><i class="fas fa-bars"></i></div>
+            <ul class="nav-menu">
+                <!-- Forum-link -->
+                <li class="dropdown"><a href="/">Forums</a></li>
+                <!-- Om-os-link -->
+                <li><a href="/">Om os</a></li>
+                <!-- FAQ-link -->
+                <li><a href="/">FAQ</a></li>
+
+                <input type="text" placeholder="Søg..." name="search">
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+
+        <section class="kalender-container">
+
+            <div id="kalenderHeader">
+
+            </div>
+            <div id="kalender"></div>
+
+
+            <div id="eventModal" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <h2>Tilføj begivenhed</h2>
+                  <input type="text" id="begivenhedNavn" placeholder="Begivenhedens navn">
+                  <button id="gemBegivenhed">Gem Begivenhed</button>
+                </div>
+              </div>
+
+              <div id="begivenhedsListe"></div>
+        </section>
+    </main>
+    <footer class="sticky-footer">
+        <div class="footer-icons">
+            <a href="/kalender.html">
+                <i class="fa-regular fa-calendar"></i> 
+            </a>
+            <a href="/forside.html">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="/">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

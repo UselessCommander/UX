@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="En kort beskrivelse af hjemmesiden.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <script src="/app.js" defer></script>
+    <title>Din Hjemmesides Titel</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="forside.html"><h1>WEDLOCK</h1></a>
+            <!-- Burger-ikon til mobilnavigation -->
+            <div class="burger"><i class="fas fa-bars"></i></div>
+            <ul class="nav-menu">
+                <!-- Forum-link -->
+                <li class="dropdown"><a href="/">Forums</a></li>
+                <!-- Om-os-link -->
+                <li><a href="/">Om os</a></li>
+                <!-- FAQ-link -->
+                <li><a href="/">FAQ</a></li>
+
+                <input type="text" placeholder="Søg..." name="search">
+            </ul>
+        </nav>
+      </header>
+    <main class="main-content">
+        <section class="guestlist-container">
+            <h2>Gæsteliste</h2>
+            <div class="guestlist-header">
+                <div class="guest-count">
+                    <label for="antalGaester">Antal gæster</label>
+                    <select id="antalGaester">
+                        <option value="24" selected>24</option>
+                     
+                    </select>
+                </div>
+                <div class="auto-invite">
+                    <input type="checkbox" id="autoSendInvitation" checked>
+                    <label for="autoSendInvitation">Auto send invitation</label>
+                </div>
+            </div>
+            <div class="guest-inputs">
+                <input type="text" placeholder="Gæst Navn *">
+                <input type="email" placeholder="Gæst E-mail">
+                <button>INVITER GÆST</button>
+            </div>
+            <div class="guestlist">
+                <ul class="guests">
+              
+                    <li> <span>Sean Larsen ✓</span> </li>
+                    <li> <span>Emil Larsen ✓</span> </li>
+                    <li> <span>Magnus Torp X</span> </li>
+                    <li> <span>Hans Henriksen ✓</span> </li>
+                    <li> <span>Sara Stenslund ?</span> </li>
+                    <li> <span>Sabina Due ✓</span> </li>
+                    <li> <span>Elias Johansen ✓</span> </li>
+                    <li> <span>Gabriella Johansen ✓</span> </li>
+                    <li> <span>Sammi Lundberg X</span> </li>
+                    <li> <span>Martin Carlsen ✓</span> </li>
+                    <li> <span>Line Holm X</span> </li>
+                    <li> <span>Carsten Olsen ✓</span> </li>
+                    <li> <span>Stina Olsen ✓</span> </li>
+                    <li> <span>Vilfred Olsen ✓</span> </li>
+                    <li> <span>Fredrik Johansen ✓</span> </li>
+                    <li> <span>Fredrik Johansen ✓</span> </li>
+                   
+                </ul>
+                <ul class="guests">
+                 >
+                    <li> <span>Lars Larsen ✓</span> </li>
+                    <li> <span>Terkel Hemming X</span> </li>
+                    <li> <span>Claudia Holmbæk ✓</span> </li>
+                    <li> <span>Gabriel Hansen X</span> </li>
+                    <li> <span>Henning Kirke✓</span> </li>
+                    <li> <span>Cecilie Toft ✓</span> </li>
+                    <li> <span>Sune Kårn ✓</span> </li>
+                    <li> <span>Wilma Lunst ✓</span> </li>
+                    <li> <span>Eigil Bjørn X</span> </li>
+                    <li> <span>Lone Henberg ✓</span> </li>
+                    <li> <span>Laura Henberg ✓</span> </li>
+                    <li> <span>Kenneth Hert X</span> </li>
+                    <li> <span>Johan Stin ?</span> </li>
+                    <li> <span>Louie Hviid ✓</span> </li>
+                    <li> <span>Line Hviid ✓</span> </li>
+                    <li> <span>Flemming Bo X</span> </li>                    
+                </ul>
+            </div>
+            <div class="guest-stats">
+                <div>Svar: ✓22</div>
+                <div>X8</div>
+                <div>?:2</div>
+            </div>
+        </section>
+    </main>
+    <footer class="sticky-footer">
+        <div class="footer-icons">
+            <a href="">
+                <i class="fa-regular fa-calendar"></i> 
+            </a>
+            <a href="">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>

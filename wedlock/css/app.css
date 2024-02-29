@@ -1,0 +1,720 @@
+@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois&display=swap');
+
+
+
+h1, h2, h3, h4, h5, h6, span, p, button, form {
+    font-family: "Jacques Francois", serif;
+    font-size: 24px;
+}
+
+a {
+  color: black;
+}
+
+/*header*/
+
+  .main-header {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    background-color: #F6F0E6;
+    color: black;
+    margin-bottom: 15px;
+  }
+
+
+  /*nav*/
+
+
+  .navbar {
+    padding: 10px; /* Tilføjer indvendig polstring til navigationen */
+    display: flex; /* Bruger flexbox til at justere elementer */
+    justify-content: space-between; /* Fordeler elementer i navigationen vandret */
+    align-items: center; /* Centrerer elementer lodret */
+    position: fixed; /* Gør navigationen fastgjort på skærmen */
+    top: 0; /* Placerer navigationen øverst på skærmen */
+    left: 0; /* Placerer navigationen til venstre på skærmen */
+    width: 100%; /* Sætter menuens bredde til 100% af viewportens bredde */
+    z-index: 999; /* Sørger for, at navigationen er foran andre elementer */
+    border-bottom: 1px solid black; /* Tilføjer en sort bundgrænse til navigationen */
+    background-color: #F6F0E6; /* Sætter en baggrundsfarve, så indholdet bagved ikke ses igennem */
+  }
+  
+  .burger {
+    cursor: pointer; /* Viser en håndmarkør, når musemarkøren er over burger-ikonet */
+    background: none; /* Fjerner baggrundsfarven */
+    border: none; /* Fjerner kantlinjer */
+    font-size: 24px; /* Indstiller skriftstørrelsen til 24 pixels */
+  }
+  
+  .nav-menu {
+    margin: 0; /* Fjerner yderligere margin fra menuen */
+    padding: 0; /* Fjerner yderligere polstring fra menuen */
+    display: none; /* Skjuler menuen som standard */
+  }
+  
+  .nav-menu.active {
+    display: block; /* Viser menuen, når den har klassen "active" */
+    position: absolute; /* Positioner menuen absolut i forhold til det nærmeste positionerede forældreelement */
+    top: 100%; /* Placerer menuen 100% under forældreelementet (navigationslinjen) */
+    left: 0; /* Placerer menuen helt til venstre i forhold til forældreelementet */
+    width: 100%; /* Sætter menuens bredde til 100% af forældreelementets bredde */
+    background-color: white; /* Sætter baggrundsfarven til hvid */
+    border: 1px solid black; /* Tilføjer en sort kantlinje til menuen */
+  }
+  
+  
+  /* Styling for navigationselementer */
+  .nav-menu li {
+    text-align: center; /* Centrerer tekst inden i menuens listeelementer */
+  }
+  
+  .nav-menu li a {
+    color: white; /* Sætter tekstfarven til hvid */
+    padding: 10px; /* Tilføjer indvendig polstring til ankerelementer */
+    display: block; /* Gør ankerelementer til blokelementer for at få dem til at fylde hele menuens bredde */
+    color: black; /* Sætter tekstfarven til sort (dette kan overskrive tidligere farveindstillinger) */
+  }
+  
+
+ 
+/*index*/
+
+  .background-btn-container {
+    background-image: url("../img/image1.png");
+    height: 366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+  .button-container {
+    background-color: rgba(0, 0, 0, 0.3); 
+    border-radius: 30px; 
+    padding: 10px; 
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin: 40px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 14px; 
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  
+  }
+  
+  .btn-register {
+    background: rgba(15, 15, 15, 0.6);
+  }
+  
+  .btn-login {
+    background: none; 
+  }
+
+
+  .info-txt {
+    text-align: center;
+    padding: 0 40px 0 40px;
+  }
+
+  .info-txt h2 {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .info-txt h3 {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+
+  .info-txt p {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.8;
+    
+  }
+ 
+ 
+  /*footer*/
+  .sticky-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #F6F0E6; 
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; /* Sørg for at footeren forbliver ovenpå andre elementer */
+    margin-top: 20%;
+    
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  color: #000;
+}
+
+.footer-icons i {
+    padding: 0 10px;
+    font-size: 24px; 
+}
+
+
+
+
+
+
+  /*login og registreringsform*/
+
+  .login-container,  .profile-container {
+    max-width: 350px;
+    margin: 50px 20px ;
+    
+  }
+  
+  .input-group {
+    margin-bottom: 1rem;
+    position: relative;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 50px;
+    text-indent: 35px;
+  }
+  
+  .input-group label {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    padding: 0 10px;
+  }
+  
+  .login-button button , .register-button button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    background: url('/img/image2.png') no-repeat center center; 
+    background-size: cover;
+    background-position: center;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  
+  
+  .forgot-password a {
+    display: block;
+    margin-top: 1rem;
+    color: #000;
+    font-size: 0.9em;
+  }
+  
+  #togglePassword {
+    position: absolute;
+    right: 10px;
+    top: 61%;
+    transform: translateY(-50%); 
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px;
+    border: 1px solid black;
+    background: url('/img/image2.png') no-repeat center center; 
+    background-size: cover;
+    font-size: 1em;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+  }
+
+  /* forside */
+  .planning-section {
+    text-align: center;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .random-title {
+    background-image: url(/img/image1.png);
+    background-size: cover;
+    height: 344px;
+  }
+
+
+  .random-title h2 {
+    border-radius: 50px;
+    
+  }
+  
+  .planning-section h2 {
+    margin-bottom: 0.5em;
+  }
+  
+  .planning-section p {
+    margin-bottom: 2em;
+    font-size: 1.2em;
+  }
+  
+  .planning-options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 20px 20px 20px;
+  }
+  
+  .planning-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding:5px;
+    margin: 10px 0;
+    border-radius: 50px;
+    border: 1px solid black;
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+
+  }
+
+  .dato {
+    background-image: url(/img/135.png) ;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .budget {
+    background-image: url('/img/158.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .gaesteliste {
+    background-image: url('/img/159.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+
+  .check-list {
+    background-image: url('/img/160.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .oenskeliste {
+    background-image: url('/img/161.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+  .option-text {
+    color: #ffffff;
+    text-shadow: 
+      -1px -1px 0 #000,  
+       1px -1px 0 #000,
+      -1px 1px 0 #000,
+       1px 1px 0 #000; /* Sort skygge rundt om teksten for at skabe kontureffekten */
+    font-weight: bold; 
+  }
+  
+
+  /* kalender */
+.kalender-container {
+  font-family: "Jacques Francois", serif;
+}
+
+  #kalender {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-size: 14px;
+    
+  }
+  
+  #kalenderHeader {
+    font-size: 24px; /* Sætter størrelsen af skrifttypen for kalenderens header */
+    color: #333; /* Sætter skriftfarven for kalenderens header */
+    margin-bottom: 10px; /* Tilføjer lidt plads under kalenderens header */
+    margin-top: 3vh;
+    text-align: center;
+  }
+
+  .dag {
+    padding: 1vw; /* Øger polstringen i hver kalendercelle */
+    border: 1px solid #ddd; /* Sætter kantfarven for hver dag */
+    min-height: 50px; /* Sætter en minimumshøjde for cellerne */
+  }
+  
+  .header {
+    background-color: #f7f7f7; /* Baggrundsfarve for headercellerne (dagene af ugen) */
+    font-weight: bold; /* Gør skrifttypen fed for headercellerne */
+  }
+  
+  .nuværendeDag {
+    background-color: #E6E8F5; /* Baggrundsfarve for den nuværende dag */
+    color: black; /* Skriftfarve for den nuværende dag */
+    font-weight: bold; /* Gør skrifttypen fed for den nuværende dag */
+  }
+  
+  .andenMåned {
+    color: #999; /* Skriftfarve for dage der ikke er en del af den aktuelle måned */
+  }
+
+
+  .modal {
+    display: none; /* Skjult som standard */
+    position: fixed; /* Bliver på samme sted på skærmen */
+    z-index: 1; /* Ligger over andre elementer */
+    left: 0;
+    top: 0;
+    width: 100%; /* Fuld bredde */
+    height: 100%; /* Fuld højde */
+    overflow: auto; /* Aktiverer scroll, hvis det er nødvendigt */
+    background-color: rgb(0,0,0); /* Fallback-farve */
+    background-color: rgba(0,0,0,0.4); /* Sort med lidt gennemsigtighed */
+  }
+  
+  /* Modal indhold */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% fra toppen og centreret */
+    padding: 20px;
+    width: 80%; 
+
+  }
+  
+  /* Knappen der lukker modalen */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+ 
+ 
+  #begivenhedsListe {
+    margin-top: 20px; 
+}
+
+#begivenhedsListe div {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 8px;
+    margin-bottom: 5px; /* Tilføjer afstand mellem begivenhederne */
+}
+
+  
+
+
+  /*budget*/
+
+  .budget-container {
+    max-width: 350px; 
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.budget-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.budget-header h1 {
+    font-size: 24px; 
+}
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 20px; 
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+button#addMaxBudgetBtn {
+    padding: 5px 15px;
+}
+
+button#addExpenseBtn {
+    font-size: 24px; /* Større plus-tegn */
+    line-height: 0; /* Tilpasning af linjeafstanden */
+    padding: 10px 10px;
+}
+
+.budget-list div {
+  display: flex;
+  justify-content: space-between; /* Dette spreder børneelementerne fra hinanden */
+  align-items: center; /* Dette sikrer, at elementerne er centreret vertikalt */
+  border: 1px solid black;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: #f9f9f9; 
+  font-size: 16px; 
+}
+
+.budget-footer {
+    text-align: center;
+}
+
+.budget-footer h2 {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+#remainingAmount {
+    font-size: 24px;
+    color: #333;
+}
+
+
+/* Luk-knappen */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+/*gæsteliste*/
+
+.guestlist-container {
+ 
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.guestlist-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.guest-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.guest-inputs input,
+.guest-inputs button {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 50px;
+  
+}
+
+.guest-inputs button {
+  background-image: url(/img/159.png);
+  cursor: pointer;
+  border: 1px solid black;
+  background-size: cover;
+  background-position: center;
+
+  color: #ffffff;
+  text-shadow: 
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000; /* Sort skygge rundt om teksten for at skabe kontureffekten */
+  font-weight: bold; 
+}
+
+.guestlist {
+  display: flex;
+  justify-content: space-around;
+}
+
+.guests {
+  padding: 0;
+  list-style-type: disc;
+}
+
+
+.guests li span {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 15px;
+}
+
+.guest-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.guest-stats > div /*kun direkte børneelementer af guest-stats*/ {
+  background: #e7e7e7;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+
+
+@media only screen and (min-width: 780px) {
+  .burger {
+    display: none; /* Skjuler burger-menuen på desktop */
+  }
+
+  .navbar {
+    display: flex; /* Viser navigationselementer på desktop */
+    justify-content: space-between; /* Fordeler elementer jævnt omkring navigationen */
+    height: 90px;
+  }
+
+  .navbar a h1 {
+    font-size: 32px;
+  }
+
+  .nav-menu {
+    display: block; /* Viser menuen på desktop */
+    width: auto; /* Tilpasser bredden efter indhold */
+    padding: 0; /* Fjerner polstring */
+  }
+
+  .nav-menu li {
+    display: inline-block; /* Viser menuelementer som inline-blokke */
+    margin: 0 20px 0 20px;
+  }
+
+  .nav-menu li a {
+    color: black; /* Tekstfarve for menuelementer */
+    padding: 10px; /* Polstring omkring menuelementer */
+    display: block; /* Gør menuelementer til blokelementer */
+    border-radius: 5px; /* Afrunder hjørnerne af menuelementer */
+  }
+
+  .nav-menu li a:hover, .nav-menu li a:focus {
+    border: 1px solid black;
+  }
+
+  /*index*/
+
+
+  .background-btn-container {
+    background-image: url("../img/image1.png");
+    height: 466px;
+    width: 100vw;
+  }
+
+  .button-container {
+    margin: 40px 500px 40px 500px;
+  }
+
+  .info-txt {
+    padding: 0 40px 0 40px;
+  }
+
+  .info-txt h2 {
+    font-size: 32px;
+  }
+
+  .info-txt h3 {
+    font-size: 24px;
+  }
+
+  .info-txt p {
+    font-size: 15px;
+    line-height: 2;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+
+
+  /*login*/
+
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    height: 100vh; 
+  }
+
+ .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+  }
+
+  /*forside*/
+
+
+  .planning-options {
+    margin-top: 20px;
+    gap: 20px
+    
+  }
+
+  .planning-option {
+    margin: 10px 400px 10px 400px;
+  }
+
+  /*gæsteliste*/
+  .guestlist-container {
+ 
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px 400px;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+}
+
+.guestlist-container h2 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 70px;
+}
+

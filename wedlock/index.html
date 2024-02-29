@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="En kort beskrivelse af hjemmesiden.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="app.js" defer></script>
+    
+</head>
+<body>
+    <header class="main-header">
+        
+        <nav class="navbar">
+            <a href="index.html"><h1>WEDLOCK</h1></a>
+            <!-- Burger-ikon til mobilnavigation -->
+            <div class="burger"><i class="fas fa-bars"></i></div>
+            <ul class="nav-menu">
+                <!-- Forum-link -->
+                <li class="dropdown"><a href="/">Forums</a></li>
+                <!-- Om-os-link -->
+                <li><a href="/">Om os</a></li>
+                <!-- FAQ-link -->
+                <li><a href="/">FAQ</a></li>
+
+                <input type="text" placeholder="Søg..." name="search">
+            </ul>
+        </nav>
+        
+    </header>
+    <main class="main-content">
+        <div class="background-btn-container">
+        
+            <div class="button-container">
+              <button class="btn btn-register" onclick="location.href='register.html'">OPRET PROFIL</button>
+              <button class="btn btn-login" onclick="location.href='login.html'">LOG IND</button>
+            </div>
+
+        </div>
+
+        <section class="info-txt">
+            <h2>Hvorfor os?</h2>
+            <h3>Vores vision</h3>
+
+            <p>Velkommen til Wedlock, hvor vi stræber efter at gøre hvert bryllup til en uforglemmelig begivenhed. 
+                Vores vision er at skabe et rum, hvor kærlighed og detaljer forenes, og hvor brudepar kan opleve en problemfri rejse mod deres store dag. 
+                Vi tror på at forvandle drømme til virkelighed ved at levere personlig service, inspirerende idéer og enestående planlægning. 
+                Fra den første gnist af idéen til det sidste farvel på bryllupsdagen, er vores mål at skabe magiske øjeblikke, der varer livet ud. Velkommen til Wedlock - hvor hvert bryllup er en unik fortælling om kærlighed og fejring.
+            </p>
+        </section>
+          
+    </main>
+    <footer class="sticky-footer">
+        <div class="footer-icons">
+            <a href="">
+                <i class="fa-regular fa-calendar"></i> 
+            </a>
+            <a href="">
+                <i class="fas fa-home"></i>
+            </a>
+            <a href="">
+                <i class="fas fa-user"></i>
+            </a>
+        </div>
+    </footer>
+</body>
+</html>
